@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vivek Vyas | AI & Machine Learning Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<header class="hero reveal">
+  <div class="container">
+    <h1>Vivek Vyas</h1>
+    <h2>Artificial Intelligence & Machine Learning Engineer</h2>
+    <p>
+      Master’s graduate in Artificial Intelligence with hands-on experience in
+      industrial AI systems, machine learning pipelines, and decision support
+      solutions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="assets/Vivek_Vyas_Resume.pdf" target="_blank" class="btn primary">Download CV</a>
+      <a href="https://github.com/Vivek2960" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/vivek-vyas-b55b942a2" target="_blank" class="btn">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <div class="container">
+    <h3>About Me</h3>
+    <p>
+      I am a Master’s student in Artificial Intelligence with a strong focus on
+      applying machine learning to real-world industrial problems.
+    </p>
+    <p>
+      During my Master’s thesis at Fraunhofer FFB, I worked on AI-optimized
+      battery manufacturing using simulation and smart scheduling.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="alt reveal">
+  <div class="container">
+    <h3>Experience</h3>
+
+    <div class="item">
+      <h4>Master’s Thesis – AI-Optimized Battery Manufacturing</h4>
+      <span>Fraunhofer FFB Institute, Münster, Germany | Jan 2025 – Oct 2025</span>
+      <ul>
+        <li>Production-oriented ML pipelines for industrial datasets</li>
+        <li>Model evaluation and comparison</li>
+        <li>End-to-end AI workflow design</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h4>Machine Learning Intern</h4>
+      <span>Trulloy Software and Solutions | May 2021 – Jan 2022</span>
+      <ul>
+        <li>Python-based data analysis and automation</li>
+        <li>ML workflow optimization</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="reveal">
+  <div class="container">
+    <h3>Education</h3>
+
+    <div class="item">
+      <h4>M.Sc. Artificial Intelligence</h4>
+      <span>Deggendorf Institute of Technology | Oct 2022 – Ongoing</span>
+    </div>
+
+    <div class="item">
+      <h4>B.E. Electronics and Communication Engineering</h4>
+      <span>Gujarat Technological University | Jul 2018 – Jul 2022</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="alt reveal">
+  <div class="container">
+    <h3>Technical Skills</h3>
+
+    <div class="skills-grid">
+      <div class="skill-card">Python, Pandas, NumPy, SQL</div>
+      <div class="skill-card">Machine Learning & Time-Series</div>
+      <div class="skill-card">Computer Vision (OpenCV, CNN)</div>
+      <div class="skill-card">Plant Simulation, SimTalk</div>
+      <div class="skill-card">Docker, REST APIs, AWS, Azure</div>
+      <div class="skill-card">LLMs, RAG Systems</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <div class="container">
+    <h3>Projects</h3>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="assets/img/building-age.jpg" alt="Building Age Prediction">
+        <h4>Building Age Prediction</h4>
+        <p>Satellite image-based ML model for estimating building age.</p>
+        <span>Python · OpenCV · TensorFlow</span>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/hexapod.jpg" alt="Hexapod Robot">
+        <h4>Hexapod Robot Simulation</h4>
+        <p>Insect-inspired robot simulation with PID control.</p>
+        <span>MATLAB · Simscape</span>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/mems.jpg" alt="MEMS Gyroscope">
+        <h4>MEMS Gyroscope Modeling</h4>
+        <p>Mathematical modeling and experimental validation.</p>
+        <span>MATLAB · Arduino</span>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/facemask.jpg" alt="Face Mask Detection">
+        <h4>Face Mask Detection</h4>
+        <p>Real-time CV system optimized for edge devices.</p>
+        <span>Python · OpenCV · CNN</span>
+        <video controls>
+          <source src="assets/video/facemask-demo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/lstm.jpg" alt="LSTM">
+        <h4>Stock Price Prediction</h4>
+        <p>Time-series forecasting using LSTM networks.</p>
+        <span>Python · LSTM · Flask</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt reveal">
+  <div class="container">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:vivekmvyas2000@gmail.com">vivekmvyas2000@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Vivek Vyas</p>
+</footer>
+
+<!-- SIMPLE SCROLL ANIMATION -->
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add("active");
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+
+</body>
+</html>
