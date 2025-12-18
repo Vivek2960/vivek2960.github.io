@@ -893,10 +893,15 @@ html[data-theme="light"] .topnav{
   transition: transform .55s ease, filter .55s ease;
 }
 .project-card:hover .media img,
-.project-card:hover .media.video video{
+.project-card:hover .media.video{
   transform: scale(1.04);
-  filter: saturate(1.06) contrast(1.03);
 }
+
+.project-card .media.video video{
+  transform: none !important;
+  filter: none !important;
+}
+
 
 /* Cards: subtle top highlight (premium) */
 .card,
@@ -992,6 +997,10 @@ html[data-theme="light"] .topnav{
   .mode-toggle::before{
     display:none;
   }
+   .project-card .media.video video{
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
   .project-card:hover .media img,
   .project-card:hover .media.video video{
     transform:none;
